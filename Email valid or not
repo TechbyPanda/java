@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+  Scanner scan = new Scanner(System.in);
+  int i,count=0;
+  /*System.out.println(&quot;Enter your email id : &quot;);
+  String email = scan.next();*/
+  String email = &quot;palashsharma259@gmail.com&quot;;
+  int x=email.length()-4;
+  if(email.charAt(x)==&#39;.&#39;) {
+  for(i=0;i&lt;email.length();i++) {
+  char check = email.charAt(i);
+  if(check == &#39;@&#39; ){
+  count++;
+   }
+   }
+  if(count==1)
+     System.out.println(&quot;Valid&quot;);
+  else
+     System.out.println(&quot;Invalid&quot;);
+
+}
+else
+   System.out.println(&quot;Invalid&quot;);
+
+  }
+}
